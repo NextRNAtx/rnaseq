@@ -13,8 +13,6 @@
             "properties": {
                 "input": {
                     "type": "string",
-                    "format": "file-path",
-                    "mimetype": "text/csv",
                     "pattern": "\\.csv$",
                     "schema": "assets/schema_input.json",
                     "description": "Path to comma-separated file containing information about the samples in the experiment.",
@@ -133,8 +131,6 @@
                 },
                 "fasta": {
                     "type": "string",
-                    "format": "file-path",
-                    "mimetype": "text/plain",
                     "pattern": "\\.fn?a(sta)?(\\.gz)?$",
                     "description": "Path to FASTA genome file.",
                     "help_text": "This parameter is *mandatory* if `--genome` is not specified. If you don't have a BWA index available this will be generated for you automatically. Combine with `--save_reference` to save BWA index for future runs.",
@@ -142,8 +138,6 @@
                 },
                 "gtf": {
                     "type": "string",
-                    "format": "file-path",
-                    "mimetype": "text/plain",
                     "pattern": "\\.gtf(\\.gz)?$",
                     "description": "Path to GTF annotation file.",
                     "fa_icon": "fas fa-code-branch",
